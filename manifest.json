@@ -2,7 +2,7 @@
   "name": "S-IT Smart Learning (6-8)",
   "short_name": "S-IT Learning",
   "description": "Smart Class Learning App for IT",
-  "start_url": "S678index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4834d2",
