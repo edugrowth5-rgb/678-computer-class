@@ -1,6 +1,6 @@
 const cacheName = 'sit-learning-v1';
 const assets = [
-  'S678index.html',
+  'index.html',
   'S678style.css',
   'S678engine.js',
   'Sdata6.js',
