@@ -66,5 +66,16 @@
     <script src="Sdata7.js"></script>
     <script src="Sdata8.js"></script>
     <script src="S678engine.js"></script>
+    
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker Registered!', reg))
+        .catch(err => console.log('Service Worker Error:', err));
+    });
+  }
+</script>
+
 </body>
 </html>
