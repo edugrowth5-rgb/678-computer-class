@@ -7,6 +7,7 @@
     --S-text-muted: #7f8c8d;
     --S-card-bg: #ffffff;
     --S-border: #dcdde1;
+    --S-panel: #ffffff;
 }
 
 body.S-dark-theme {
@@ -16,42 +17,84 @@ body.S-dark-theme {
     --S-text-muted: #a4b0be;
     --S-card-bg: #2d3436;
     --S-border: #444;
+    --S-panel: #1e1e1e;
 }
 
-body, html { margin: 0; height: 100%; font-family: 'Segoe UI', sans-serif; background: var(--S-bg); color: var(--S-text-main); overflow: hidden; transition: 0.3s; }
+body, html { margin: 0; padding: 0; height: 100%; width: 100%; font-family: 'Segoe UI', sans-serif; background: var(--S-bg); color: var(--S-text-main); overflow: hidden; }
 
 /* TOP BAR */
-.S-top-bar { height: 70px; background: var(--S-dark-header); color: white; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-.S-top-left { display: flex; gap: 10px; }
-.S-central-title { text-align: center; position: absolute; left: 50%; transform: translateX(-50%); }
-.S-central-title h1 { margin: 0; font-size: 18px; letter-spacing: 1px; }
+.S-top-bar { height: 70px; background: var(--S-dark-header); color: white; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; z-index: 1000; position: relative; }
+.S-top-left, .S-top-right { display: flex; gap: 10px; align-items: center; z-index: 10; }
+.S-central-title { text-align: center; position: absolute; left: 50%; transform: translateX(-50%); width: 100%; pointer-events: none; }
+.S-central-title h1 { margin: 0; font-size: 18px; letter-spacing: 1px; pointer-events: auto; }
+#S-breadcrumb { font-size: 12px; opacity: 0.8; pointer-events: auto; }
 
-.S-icon-btn { background: rgba(255,255,255,0.1); border: none; color: white; font-size: 24px; cursor: pointer; padding: 8px; border-radius: 10px; display: flex; align-items: center; }
-.S-icon-btn:hover { background: var(--S-accent); }
+/* WRAPPER & SIDEBAR */
+.S-main-wrapper {
+    position: relative;
+    height: calc(100vh - 70px);
+    width: 100%;
+    overflow: hidden;
+}
 
-.S-btn-toggle { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 8px 18px; border-radius: 20px; cursor: pointer; font-weight: bold; margin-left: 5px; transition: 0.3s; }
-.S-btn-toggle.S-active-class { background: var(--S-accent) !important; box-shadow: 0 0 10px rgba(41, 128, 185, 0.5); border-color: transparent; }
+.S-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: var(--S-panel);
+    border-right: 1px solid var(--S-border);
+    transition: transform 0.4s ease;
+    z-index: 5;
+    overflow-y: auto;
+}
 
-/* LAYOUT */
-.S-main-wrapper { display: flex; height: calc(100vh - 70px); }
-.S-sidebar { width: 320px; background: var(--S-sidebar-bg); border-right: 1px solid var(--S-border); transition: 0.4s; display: flex; flex-direction: column; }
-.S-sidebar.S-collapsed { margin-left: -320px; }
+/* Sidebar band hone par use screen se bahar slide karein */
+.S-sidebar.S-collapsed {
+    transform: translateX(-300px);
+}
 
-.S-search-box { padding: 15px; background: var(--S-sidebar-bg); border-bottom: 1px solid var(--S-border); }
-#S-search-input { width: 100%; padding: 10px 15px; border-radius: 20px; border: 1px solid var(--S-border); background: var(--S-bg); color: var(--S-text-main); outline: none; box-sizing: border-box; }
+/* CONTENT PANEL - AUTO ADJUSTING */
+.S-content-panel {
+    position: absolute;
+    left: 300px; /* Sidebar ki jagah */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    background: var(--S-bg);
+    overflow-y: auto;
+    transition: left 0.4s ease; /* Sidebar ke sath move hoga */
+}
 
-#S-unit-container { flex-grow: 1; overflow-y: auto; padding: 10px; }
-.S-u-block { border-bottom: 1px solid var(--S-border); }
-.S-unit-item { font-weight: bold; padding: 15px; cursor: pointer; color: var(--S-text-main); font-size: 16px; transition: 0.2s; }
-.S-unit-item:hover { background: rgba(0,0,0,0.02); color: var(--S-accent); }
+/* Sabse Important: Jab sidebar collapsed ho, toh content panel left se 0 ho jaye */
+.S-sidebar.S-collapsed + .S-content-panel {
+    left: 0;
+}
 
-.S-topic-list { display: none; padding: 0 15px 15px 40px; list-style: decimal; color: var(--S-text-muted); }
+/* CARD & TEXT */
+.S-card { 
+    background: var(--S-card-bg); 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    min-height: 90%;
+}
+
+.S-icon-btn, .S-btn-toggle { cursor: pointer; border: none; border-radius: 10px; transition: 0.3s; }
+.S-icon-btn { background: rgba(255,255,255,0.1); color: white; font-size: 24px; padding: 8px; display: flex; }
+.S-btn-toggle { background: rgba(255,255,255,0.15); color: white; padding: 8px 15px; font-weight: bold; }
+.S-active-class { background: var(--S-accent) !important; }
+
+/* OTHER UI */
+.S-search-box { padding: 15px; border-bottom: 1px solid var(--S-border); }
+#S-search-input { width: 100%; padding: 10px; border-radius: 20px; border: 1px solid var(--S-border); background: var(--S-bg); color: var(--S-text-main); }
+.S-unit-item { padding: 15px; font-weight: bold; cursor: pointer; border-bottom: 1px solid var(--S-border); }
+.S-topic-list { display: none; padding: 10px 10px 10px 30px; }
 .S-topic-list.S-active { display: block; }
-.S-topic-list li { padding: 10px 0; cursor: pointer; border-bottom: 1px solid var(--S-border); }
-.S-topic-list li:hover { color: var(--S-accent); font-weight: bold; }
-
-/* CONTENT PANEL */
-.S-content-panel { flex-grow: 1; padding: 30px; overflow-y: auto; background: var(--S-bg); }
-.S-card { background: var(--S-card-bg); padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); min-height: 80%; }
-.S-content-tools { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 15px; }
-.S-content-tools button { background: var(--S-sidebar-bg); border: 1px solid var(--S-border); padding: 6px 15px; border-radius: 5px; color: var(--S-text-main); cursor: pointer; font-weight: bold; }
+.S-topic-list li { padding: 8px 0; cursor: pointer; border-bottom: 1px solid var(--S-border); font-size: 14px; }
+.S-content-tools { display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 15px; }
