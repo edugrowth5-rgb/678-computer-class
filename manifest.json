@@ -1,11 +1,12 @@
 {
   "name": "IT Smart Learning (6-8)",
-  "short_name": "678-IT Class",
+  "short_name": "678-IT-Class",
   "description": "Smart Class Learning App for IT",
-  "start_url": "index.html",
+  "start_url": "S678index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#4834d2",
+  "orientation": "any",
+  "background_color": "#f5f6fa",
+  "theme_color": "#2c3e50",
   "icons": [
     {
       "src": "1775391084235.png",
