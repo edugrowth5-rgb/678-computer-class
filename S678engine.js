@@ -99,7 +99,25 @@ function loadS678Content(unit, topic) {
 
 // 5. Helpers (Font, FullScreen, Menu)
 function toggleS678Menu() { 
-    document.getElementById('S-left-menu').classList.toggle('S-collapsed'); 
+    const sidebar = document.getElementById('S-left-menu');
+    const content = document.getElementById('S-content-display');
+    
+    sidebar.classList.toggle('S-collapsed'); 
+    
+    // Yahan logic add kiya hai: Sidebar band toh content panel ki left margin 0
+    if(sidebar.classList.contains('S-collapsed')) {
+        content.style.left = "0";
+    } else {
+        content.style.left = "300px";
+    }
+    
+    // Icon update logic
+    const icon = document.getElementById('S-main-menu-icon');
+    if(sidebar.classList.contains('S-collapsed')) {
+        icon.setAttribute('name', 'chevron-forward-outline');
+    } else {
+        icon.setAttribute('name', 'menu-outline');
+    }
 }
 
 function toggleSTopics(id) {
