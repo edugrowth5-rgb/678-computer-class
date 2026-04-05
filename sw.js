@@ -6,7 +6,8 @@ const assets = [
   'Sdata6.js',
   'Sdata7.js',
   'Sdata8.js',
-  'manifest.json'
+  'manifest.json',
+  '1775391084235.png'
 ];
 
 // Install Service Worker
