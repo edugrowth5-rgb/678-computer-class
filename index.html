@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>S-IT Smart Learning (6-8)</title>
     <link rel="stylesheet" href="S678style.css">
-        <link rel="icon" type="image/png" href="1775391084235.png">
     
+    <link rel="icon" type="image/png" href="1775391084235.png">
+    <link rel="icon" sizes="192x192" href="1775391084235.png">
+    <link rel="icon" sizes="512x512" href="1775391084235.png">
     <link rel="apple-touch-icon" href="1775391084235.png">
-    
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2c3e50">
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body class="S-light-theme">
@@ -53,7 +55,9 @@
             <div class="S-content-tools">
                 <button onclick="adjustS678Font(1)">A+</button>
                 <button onclick="adjustS678Font(-1)">A-</button>
-                <button onclick="toggleS678FullScreen()"><ion-icon name="expand-outline"></ion-icon></button>
+                <button onclick="toggleS678FullScreen()">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </button>
             </div>
 
             <div class="S-card">
@@ -76,9 +80,20 @@
     <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js')
-        .then(reg => console.log('Service Worker Registered!', reg))
-        .catch(err => console.log('Service Worker Error:', err));
+      navigator.serviceWorker.register('sw.js').then(reg => {
+        
+        // Naya update check karne ka logic
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // Jab naya code install ho jaye, auto-reload karein
+              window.location.reload();
+            }
+          });
+        });
+
+      }).catch(err => console.log("SW Error:", err));
     });
   }
 </script>
