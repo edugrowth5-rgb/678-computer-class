@@ -1,6 +1,6 @@
 {
-  "name": "S-IT Smart Learning (6-8)",
-  "short_name": "S-IT Learning",
+  "name": "IT Smart Learning (6-8)",
+  "short_name": "678-IT Class",
   "description": "Smart Class Learning App for IT",
   "start_url": "index.html",
   "display": "standalone",
