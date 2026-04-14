@@ -11,7 +11,11 @@ const Sdata8Menu = [
         "Transmission Media",
         "Wireless Networking Technology",
         "Networking Devices",
-        "Connectors and Security"
+        "Connectors and Security",
+        "Various Types of Network",
+        "Network Architecture",
+        "Network Topology",
+        "Network Protocols"
     ]
   }
 ];
@@ -370,6 +374,161 @@ const Unit1ContentC8 = {
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Networking Devices')">Back</button>
                 <span style="font-weight:bold; color:#888;">Page 7</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Various Types of Network')">Next</button>
+            </div>
+        </div>
+    `,
+    "Various Types of Network": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">VARIOUS TYPES OF NETWORK</h3>
+            <p>A computer network can be inside a room, a building, across cities, countries or even continents. Depending upon the area covered (geographical boundaries), networks can be classified into following categories:</p>
+            
+            <ul style="padding-left: 20px;">
+                <li><b>PAN (Personal Area Network):</b> PAN is a computer network used for communication among various electronic devices such as personal computers, mobile phones, etc. in close proximity to a single person.</li>
+                <li><b>LAN (Local Area Network):</b> LAN is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.</li>
+                <li><b>MAN (Metropolitan Area Network):</b> MAN is a computer network that interconnects users with computer resources in a geographic area or region larger than that covered by even a large local area network (LAN) but smaller than the area covered by a wide area network (WAN).</li>
+                <li><b>WAN (Wide Area Network):</b> WAN is a computer network that exists over a large-scale geographical area. A WAN connects different smaller networks, including local area networks (LANs) and metro area networks (MANs).</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Connectors and Security')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 8</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Network Architecture')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Network Architecture": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">NETWORK ARCHITECTURE</h3>
+            <p>Network architecture is the design of a computer network. It is a framework for the specification of a network's physical components and their functional organization and configuration. There are two main types:</p>
+            
+            <ul style="padding-left: 20px;">
+                <li><b>Client-Server Architecture:</b>
+                    <ul>
+                        <li>There is a specific system called a <b>server</b> that provides services to other systems (clients).</li>
+                        <li>A centralized server is used to store data because its management is centralized.</li>
+                        <li>Authorized users can access data stored on the server's hard disk.</li>
+                    </ul>
+                </li>
+                <li style="margin-top:15px;"><b>Peer-to-Peer Architecture:</b>
+                    <ul>
+                        <li>Every computer has the same status and there is no central server.</li>
+                        <li>Each computer can act as both a server and a client.</li>
+                        <li>Suited for small networks with fewer than 10-12 computers.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Various Types of Network')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 9</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Network Topology')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Network Topology": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">NETWORK TOPOLOGY</h3>
+            <p>Network Topology is the schematic description of a network arrangement, connecting various nodes through lines of connection.</p>
+            
+            <h4 style="color:#2c3e50;">1. Bus Topology</h4>
+            <ul style="padding-left: 20px;">
+                <li>Every computer and network device is connected to a single cable.</li>
+                <li>Transmits data only in one direction.</li>
+                <li>The whole network fails if the main cable fails.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 15px;">2. Star Topology</h4>
+            <ul style="padding-left: 20px;">
+                <li>All nodes are linked to a common central node (Hub) via a cable.</li>
+                <li>Every node has its own dedicated connection to the hub.</li>
+                <li>If the hub crashes, the entire network is stopped.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 15px;">3. Ring Topology</h4>
+            <ul style="padding-left: 20px;">
+                <li>Formed in a circular path where each computer is connected to two neighbors.</li>
+                <li>The last computer is connected to the first one to form a ring.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 15px;">4. Tree Topology</h4>
+            <ul style="padding-left: 20px;">
+                <li>Has a root node and all other nodes are connected to it forming a hierarchy.</li>
+                <li>It must have at least three levels of hierarchy.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 15px;">5. Mesh Topology</h4>
+            <ul style="padding-left: 20px;">
+                <li>Each node is connected to every other node in the network.</li>
+                <li>It provides a point-to-point connection to all other devices.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Network Architecture')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 10</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Network Protocols')">Next</button>
+            </div>
+        </div>
+    `,
+
+   "Network Protocols": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">PROTOCOLS</h3>
+            <p>Protocols are the set of standard rules and regulations which governs the network. To successfully send and receive information, devices on both sides of a communication exchange, must accept and follow protocol conventions.</p>
+            
+            <ul style="padding-left: 20px;">
+                <li>Network protocols are set of established rules that dictate how to format, transmit and receive data.</li>
+                <li>Computer network devices can communicate regardless of the differences in their underlying infrastructures, designs or standards.</li>
+                <li>Support for network protocols can be built into software, hardware or both.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top:20px;">TCP/IP (Transmission Control Protocol/Internet Protocol)</h4>
+            <ul style="padding-left: 20px;">
+                <li>TCP/IP is a set of networking protocols that allow two or more computers to communicate on the internet.</li>
+                <li>It can also be used as a communication protocol in a private network (intranet).</li>
+                <li>TCP/IP specifies how data is exchanged over the internet by providing an end-to-end communication.</li>
+                <li>It identifies how data should be broken into packets, addressed, transmitted, routed and received at the destination.</li>
+                <li>TCP defines how applications can create channels of communication across a network and manages how a message is assembled into smaller packets before transmission.</li>
+                <li>IP defines how to address and route each packet to make sure it reaches the right destination.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top:20px;">HTTP & HTTPS</h4>
+            <ul style="padding-left: 20px;">
+                <li><b>HTTP:</b> It is the set of rules for transferring files, such as text, graphic images, sound, video, and other multimedia files, on the World Wide Web.</li>
+                <li>As soon as we open our Web browser, the user is indirectly making use of HTTP.</li>
+                <li><b>HTTPS (HTTP Secure):</b> It encrypts (encodes) and decrypts (decodes) user HTTP page requests as well as the pages that are returned by the Web server.</li>
+                <li>The use of HTTPS protects against eavesdropping (snooping) and man-in-the-middle (MITM) attacks.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top:20px;">FTP (File Transfer Protocol)</h4>
+            <ul style="padding-left: 20px;">
+                <li>FTP is a standard Internet protocol for transmitting files between computers on the Internet over TCP/IP connections.</li>
+                <li>It is a client-server protocol, where a client will ask for a file, and a local or remote server will provide it.</li>
+                <li><b>Anonymous FTP:</b> A type of FTP that allows users to access files and other data without needing an ID or a password.</li>
+                <li>Users can work on FTP via a simple command line interface (e.g., Command Prompt) or with a dedicated graphical user interface (GUI).</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top:20px;">SMTP (Simple Mail Transfer Protocol)</h4>
+            <ul style="padding-left: 20px;">
+                <li>SMTP is one of the most common and popular protocols for email communication over the Internet.</li>
+                <li>It provides intermediary network services between the remote email provider and the local user accessing it.</li>
+                <li>It is composed of four key components: Mail User Agent (MUA), Mail Submission Agent (MSA), Mail Transfer Agent (MTA), and Mail Delivery Agent (MDA).</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top:20px;">IMAP & POP</h4>
+            <ul style="padding-left: 20px;">
+                <li><b>IMAP (Internet Message Access Protocol):</b> It allows you to access your email wherever you are, from any device.</li>
+                <li>When you read an email using IMAP, you are reading it from the email service, not actually downloading or storing it on your computer.</li>
+                <li>IMAP only downloads a message when you click on it and attachments are not automatically downloaded.</li>
+                <li><b>POP (Post Office Protocol):</b> It contacts your email service and downloads all of your new messages from it.</li>
+                <li>Once they are downloaded onto your PC, they are deleted from the mail-server.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Network Topology')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 11</span>
                 <button class="S-nav-btn" style="opacity:0.5;" disabled>Finish</button>
             </div>
         </div>
