@@ -4,7 +4,15 @@ const Sdata8Menu = [
   {
     "id": "c8-u1",
     "title": "1. Networking Concepts",
-    "topics": ["Introduction to Networking", "Components of a Network", "Network Advantages", "Transmission Media"]
+    "topics": [
+        "Introduction to Networking", 
+        "Components of a Network", 
+        "Network Advantages", 
+        "Transmission Media",
+        "Wireless Networking Technology",
+        "Networking Devices",
+        "Connectors and Security"
+    ]
   }
 ];
 
@@ -198,6 +206,17 @@ const Unit1ContentC8 = {
                 <li>Consists of eight wires of different colors.</li>
                 <li>Uses the <b>RJ45</b> cable connector at both ends.</li>
                 <li><b>Attenuation:</b> The signal loss that occurs when a cable is stretched beyond its maximum distance capacity.</li>
+                <li><b>Straight cable:</b> It will connect one computer to a router or switch.</li>
+                <li><b>Crossover cable:</b> It connects two computers to each other without a switch or hub in-between.</li>
+                <li>Ethernet cable has improved and is now available up to a gigabit per second speed.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Optical Fiber</h4>
+            <ul style="padding-left: 20px;">
+                <li>An optical fiber cable is a type of cable that has a number of optical fibers bundled together, which are normally covered in their individual protective plastic covers.</li>
+                <li>Optical cables are used to transfer digital data signals in the form of light, up to distance of hundreds of miles, with a larger capacity to transfer data at a very high speed.</li>
+                <li>An optical fiber has replaced all other wired media because of its high speed, bandwidth and highly resistant to signal interference.</li>
+                <li>With all the advantages, it also has some limitations, it is very fragile and the maintenance cost is also very high.</li>
             </ul>
             
             <div style="background:#f4f7f6; padding:15px; border:1px solid #ccc; text-align:center; margin-top:20px; font-weight: bold;">
@@ -207,6 +226,150 @@ const Unit1ContentC8 = {
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Network Advantages')">Back</button>
                 <span style="font-weight:bold; color:#888;">Page 4</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Wireless Networking Technology')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Wireless Networking Technology": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">Wireless Networking Technology</h3>
+            
+            <h4 style="color:#2c3e50;">Infrared Signals</h4>
+            <ul style="padding-left: 20px;">
+                <li>Infrared (or commonly called IR) is a wireless mobile technology used for device communication over short distances (same technology which we use in remote controls).</li>
+                <li>In IR, light-emitting diodes (LEDs) are used to transmit IR signals, which pass through a lens and focus into a beam of IR data.</li>
+                <li>The beam source is rapidly switched on and off for data encoding.</li>
+                <li>IR communication has major limitations because it requires line-of-sight, has a short transmission range and it is unable to penetrate walls.</li>
+                <li>IR transceivers are quite cheap and serve as short-range communication solutions.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Bluetooth</h4>
+            <ul style="padding-left: 20px;">
+                <li>Bluetooth technology is a short-range wireless communication technology to replace the cables connecting two electronic devices.</li>
+                <li>Allowing a person to have a phone conversation via a headset, use a wireless mouse and synchronize information from a mobile phone to a PC, all using Bluetooth system.</li>
+                <li>Depending upon the Bluetooth version you are using, the transmission can be up to 240 meters.</li>
+                <li>All devices which are Bluetooth enabled will have the Bluetooth sign or logo.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Wi-Fi</h4>
+            <ul style="padding-left: 20px;">
+                <li>Wi-Fi (or Wireless Fidelity) is a technology that uses radio waves to provide network connectivity.</li>
+                <li>A connection is established using a wireless adapter in the vicinity of a wireless router that are connected to the network and allow users to access network.</li>
+                <li>The major advantage of Wi-Fi is that it is compatible with almost every operating system, game device, and advanced printers.</li>
+                <li>Like in mobile phones, a Wi-Fi network makes use of radio waves to transmit information across a network.</li>
+                <li>A computer should include a wireless adapter that will translate data sent into a radio signal.</li>
+                <li>This same signal will be transmitted, via an antenna, to a decoder known as the Router. Once decoded, the data will be sent to the Internet through a wired Ethernet connection.</li>
+            </ul>
+
+            <p><b>The advantages of using Wi-Fi are as follows:</b></p>
+            <ul style="padding-left: 20px;">
+                <li>Wi-Fi has the capability to replace wired communication completely as Wi-Fi is compatible with almost every device.</li>
+                <li>Through Wi-Fi, you can get connected to multiple devices.</li>
+                <li>It is much cheaper technology as compared to wired network as running of cables is not required.</li>
+                <li>Can also be installed at places where wired communication cannot reach.</li>
+            </ul>
+
+            <p><b>Following are the disadvantages of using Wi-Fi:</b></p>
+            <ul style="padding-left: 20px;">
+                <li>The signals over Wi-Fi cannot travel long distances.</li>
+                <li>The speed of data transmission is slower than wired (physical) media.</li>
+                <li>It requires additional power source for the Wi-Fi router.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Transmission Media')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 5</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Networking Devices')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Networking Devices": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">Other Networking Devices/components</h3>
+
+            <h4 style="color:#2c3e50;">Modem (Modulator-Demodulator)</h4>
+            <ul style="padding-left: 20px;">
+                <li>To connect to a network like Internet, we also use public networks like telephone networks.</li>
+                <li>Modem is used to connect computers via telephone lines.</li>
+                <li>It modulates the digital data into a telephone compatible analog signals at sender's side and demodulates the analog signals back into digital signals at receiver's side.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Switch/Hub</h4>
+            <ul style="padding-left: 20px;">
+                <li>When a network has more than two computers, then we need a central point of connection through which all the computers are connected on a network.</li>
+                <li>In wired networking this function is performed by Switch/Hub.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Repeater</h4>
+            <ul style="padding-left: 20px;">
+                <li>When the signals are transmitted through a wire like coaxial or Ethernet to a long distance, they tend to loose and distort signals.</li>
+                <li>Repeaters are signal boosters which clean, filter and retransmit, so that new boosted signals can travel long distances with same strength.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Bridge</h4>
+            <ul style="padding-left: 20px;">
+                <li>Bridge is a networking device which is used to connect two similar networks like two LANs.</li>
+                <li>The bridge connects the two subnets (LANs) and manages the traffic flow between them.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Router</h4>
+            <ul style="padding-left: 20px;">
+                <li>It is networking device which is used to connect similar networks but may have different protocols (rules governing networks) like two LANs, or a LAN and a WAN.</li>
+                <li>Routers are very important in controlling the traffic and keeping the network efficient.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Wireless Networking Technology')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 6</span>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Connectors and Security')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Connectors and Security": `
+        <div class="S-book-page">
+            <h4 style="color:#2c3e50;">Gateway</h4>
+            <ul style="padding-left: 20px;">
+                <li>Gateway is a device which connects dissimilar networks.</li>
+                <li>A network gateway joins two networks as the devices on one network can communicate with the devices on another network.</li>
+                <li>A gateway can be implemented completely in software, hardware, or a combination of both.</li>
+                <li>Gateways are also called network protocol converters.</li>
+                <li>Often the two networks that a gateway joins, use different base protocols. The gateway facilitates compatibility between the two protocols.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Firewall</h4>
+            <ul style="padding-left: 20px;">
+                <li>A firewall is a system designed to prevent unauthorized access to or from a private network.</li>
+                <li>We can implement a firewall either in hardware or software form, or a combination of both.</li>
+                <li>Firewalls prevent unauthorized internet users from accessing private networks connected to the internet, especially intranets.</li>
+                <li>All messages entering or leaving the intranet must pass through the firewall, which examines each message and blocks those that do not meet the specified security criteria.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">RJ45 Connectors</h4>
+            <ul style="padding-left: 20px;">
+                <li>RJ (Registered Jack) 45 is an 8-pin connector which is used to connect Ethernet cable to a switch or to a NIC.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">BNC connector</h4>
+            <ul style="padding-left: 20px;">
+                <li>The BNC (Bayonet Neill–Concelman) connector is a miniature quick connect/disconnect connector used for coaxial cable.</li>
+            </ul>
+
+            <h4 style="color:#2c3e50; margin-top: 20px;">Link</h4>
+            <ul style="padding-left: 20px;">
+                <li>Link is the channel or line that connects two devices. These links are used to transmit information between two or more devices in the network.</li>
+            </ul>
+
+            <div style="background:#f4f7f6; padding:15px; border-radius:10px; margin-top:20px; font-style: italic; border-left: 5px solid #d35400;">
+                <p><b>Quick Knowledge:</b> Website is a collection of webpages uploaded on the Internet. It generally belongs to an organization, a government or an individual. A Webpage not only contains text and images but also imbed graphics, videos and other digital media. These pages are hosted on WWW (World Wide Web).</p>
+                <p><b>Let's know that:</b> A web portal is a specially designed website that often serves as a single point of access for information. A web portal helps in search, navigation, personalization, notification and information integration, and often provides features like task management, collaboration, business intelligence and application integration.</p>
+            </div>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Networking Concepts', 'Networking Devices')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 7</span>
                 <button class="S-nav-btn" style="opacity:0.5;" disabled>Finish</button>
             </div>
         </div>
