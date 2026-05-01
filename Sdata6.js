@@ -73,7 +73,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid var(--S-border);">
                 <button class="S-nav-btn" disabled style="opacity:0.5;">Back</button>
-              // <span style="font-weight:bold;">Page 1</span>
+               <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'ML Features & Assembly Language')">Next</button>
             </div>
         </div>
@@ -141,7 +141,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid var(--S-border);">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'Introduction & Machine Language')">Back</button>
-               // <span style="font-weight:bold;">Page 2</span>
+               <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'HLL, 4GL & Future')">Next</button>
             </div>
         </div>
@@ -218,7 +218,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid var(--S-border);">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'ML Features & Assembly Language')">Back</button>
-             // <span style="font-weight:bold;">Page 3</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'Fifth Generation Language')">Next</button>
             </div>
         </div>
@@ -254,7 +254,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'HLL, 4GL & Future')">Back</button>
-                // <span style="font-weight:bold; color:#888;">Page 4</span>
+                <span style="font-weight:bold; color:#888;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Next Chapter</button>
             </div>
         </div>
@@ -305,7 +305,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'Fifth Generation Language')">Back</button>
-                // <span style="font-weight:bold;">Page 16-17</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Search & Cortana')">Next</button>
             </div>
         </div>
@@ -335,7 +335,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Back</button>
-               // <span style="font-weight:bold;">Page 18</span>
+               <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Task View & Virtual Desktops')">Next</button>
             </div>
         </div>
@@ -363,7 +363,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Search & Cortana')">Back</button>
-                // <span style="font-weight:bold;">Page 18-19</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Edge & Windows Hello')">Next</button>
             </div>
         </div>
@@ -396,7 +396,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Task View & Virtual Desktops')">Back</button>
-                // <span style="font-weight:bold;">Page 19-20</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Action Center & Universal Apps')">Next</button>
             </div>
         </div>
@@ -426,7 +426,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Edge & Windows Hello')">Back</button>
-                // <span style="font-weight:bold;">Page 20</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="alert('Congratulations! Chapter 2 is completed.')">Finish</button>
             </div>
         </div>
