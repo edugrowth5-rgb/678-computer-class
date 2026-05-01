@@ -1,9 +1,14 @@
-// Sdata6.js - Class 6 Unit 1 (Computer Languages) - Ultra Detailed
+// Sdata6.js - Class 6 Unit 1 & 2 - Ultra Detailed
 const Sdata6Menu = [
   {
     "id": "c6-u1",
     "title": "1. Computer Languages",
-    "topics": ["Introduction & Machine Language", "ML Features & Assembly Language", "HLL, 4GL & Future"]
+    "topics": ["Introduction & Machine Language", "ML Features & Assembly Language", "HLL, 4GL & Future", "Fifth Generation Language"]
+  },
+  {
+    "id": "c6-u2",
+    "title": "2. Further on Windows 10",
+    "topics": ["Introduction & Continuum", "Search & Cortana", "Task View & Virtual Desktops", "Edge & Windows Hello", "Action Center & Universal Apps"]
   }
 ];
 
@@ -144,43 +149,39 @@ const Unit1ContentC6 = {
 
     "HLL, 4GL & Future": `
         <div class="S-book-page">
-           
+            <h3 style="color:var(--S-accent);">HIGH LEVEL LANGUAGE (THIRD GENERATION - 3GL)</h3>
+            <p>As you have seen, machine and assembly languages had some disadvantages which urged people to develop languages that were easy to use and <b>not machine dependent</b>. These languages used simple English words, numbers, and symbols.</p>
 
-<h3 style="color:var(--S-accent);">HIGH LEVEL LANGUAGE (THIRD GENERATION - 3GL)</h3>
-<p>As you have seen, machine and assembly languages had some disadvantages which urged people to develop languages that were easy to use and <b>not machine dependent</b>. These languages used simple English words, numbers, and symbols.</p>
+            <h4 style="margin-bottom:5px;">FEATURES OF HIGH-LEVEL LANGUAGE (HLL):</h4>
+            <ul>
+                <li>HLL uses English words, symbols and mathematical operators as codes.</li>
+                <li>The codes written in HLL are <b>machine independent</b>.</li>
+                <li>This language is very easy as compared to the assembly and machine languages.</li>
+                <li>Because of easy language and programming, HLL has invited more people to develop software.</li>
+                <li>Using HLL, complex programs and software can be developed.</li>
+            </ul>
 
-<h4 style="margin-bottom:5px;">FEATURES OF HIGH-LEVEL LANGUAGE (HLL):</h4>
-<ul>
-    <li>HLL uses English words, symbols and mathematical operators as codes.</li>
-    <li>The codes written in HLL are <b>machine independent</b>.</li>
-    <li>This language is very easy as compared to the assembly and machine languages.</li>
-    <li>Because of easy language and programming, HLL has invited more people to develop software.</li>
-    <li>Using HLL, complex programs and software can be developed.</li>
-</ul>
+            <div style="background:#fff9e6; padding:15px; border-radius:10px; border:1px dashed #f1c40f; margin:15px 0;">
+                <strong>Know A Fact:</strong> Many machines did simple math, but <b>Charles Babbage's Analytical Machine</b> was the first computer we consider "programmable".
+            </div>
 
-<div style="background:#fff9e6; padding:15px; border-radius:10px; border:1px dashed #f1c40f; margin:15px 0;">
-    <strong>Know A Fact:</strong> Many machines did simple math, but <b>Charles Babbage's Analytical Machine</b> was the first computer we consider "programmable".
-</div>
+            <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:15px; text-align:left;">
+                <tr style="background:#8e44ad; color:white;">
+                    <th style="padding:12px; border:1px solid #ddd;">ADVANTAGES</th>
+                    <th style="padding:12px; border:1px solid #ddd;">DISADVANTAGES</th>
+                </tr>
+                <tr><td style="padding:10px; border:1px solid #ddd;">It is easier to understand and debug.</td><td style="padding:10px; border:1px solid #ddd;">It needs more powerful computers to run.</td></tr>
+                <tr><td style="padding:10px; border:1px solid #ddd;">It is machine independent.</td><td style="padding:10px; border:1px solid #ddd;">It also needs additional translation time.</td></tr>
+                <tr><td style="padding:10px; border:1px solid #ddd;">It is prone to large amount of errors (More productivity).</td><td style="padding:10px; border:1px solid #ddd;">It is slower than low-level languages.</td></tr>
+            </table>
 
-<table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:15px; text-align:left;">
-    <tr style="background:#8e44ad; color:white;">
-        <th style="padding:12px; border:1px solid #ddd;">ADVANTAGES</th>
-        <th style="padding:12px; border:1px solid #ddd;">DISADVANTAGES</th>
-    </tr>
-    <tr><td style="padding:10px; border:1px solid #ddd;">It is easier to understand and debug.</td><td style="padding:10px; border:1px solid #ddd;">It needs more powerful computers to run.</td></tr>
-    <tr><td style="padding:10px; border:1px solid #ddd;">It is machine independent.</td><td style="padding:10px; border:1px solid #ddd;">It also needs additional translation time.</td></tr>
-    <tr><td style="padding:10px; border:1px solid #ddd;">It is prone to large amount of errors (More productivity).</td><td style="padding:10px; border:1px solid #ddd;">It is slower than low-level languages.</td></tr>
-</table>
+            <h3 style="color:var(--S-accent);">TRANSLATOR PROGRAMS (Language Processors)</h3>
+            <p>These programs were required because HLL and AL are not directly understood by the computer. There are two main types:</p>
 
-<h3 style="color:var(--S-accent);">TRANSLATOR PROGRAMS (Language Processors)</h3>
-<p>These programs were required because HLL and AL are not directly understood by the computer. There are two main types:</p>
-
-<div style="background:var(--S-bg); padding:15px; border-radius:10px; border:1px solid var(--S-border); margin:15px 0;">
-    <p><b>1. Interpreter:</b> Executes a program by converting one instruction (written in AL or HLL) to machine code <b>one by one</b>. If an error occurs, the execution stops and must be corrected. That is why interpreters are slow. (BASIC, Pascal, COBOL).</p>
-    
-    <p><b>2. Compiler:</b> Converts the <b>whole program</b> (written in AL or HLL) into machine codes (object code) in <b>one go</b>. It lists all possible errors together. That is why compilers are fast. (C, C++, Java).</p>
-</div>
-
+            <div style="background:var(--S-bg); padding:15px; border-radius:10px; border:1px solid var(--S-border); margin:15px 0;">
+                <p><b>1. Interpreter:</b> Executes a program by converting one instruction (written in AL or HLL) to machine code <b>one by one</b>. If an error occurs, the execution stops and must be corrected. That is why interpreters are slow. (BASIC, Pascal, COBOL).</p>
+                <p><b>2. Compiler:</b> Converts the <b>whole program</b> (written in AL or HLL) into machine codes (object code) in <b>one go</b>. It lists all possible errors together. That is why compilers are fast. (C, C++, Java).</p>
+            </div>
 
             <h3 style="color:var(--S-accent);">FOURTH GENERATION LANGUAGES (4GL)</h3>
             <ul>
@@ -197,7 +198,7 @@ const Unit1ContentC6 = {
                 <strong>Quick Knowledge:</strong> 4GL are commonly used in database programming. Examples include Perl, PHP, Python, Ruby, and SQL.
             </div>
 
-            <h3 style="color:var(--S-accent);">FUTURE OF FOURTH GENERATION LANGUAGE</h3>
+            <h3 style="color:var(--S-accent);">FEATURES OF FOURTH GENERATION LANGUAGE</h3>
             <ul>
                 <li><b>User-Friendly:</b> Highly intuitive and can run on all operating systems.</li>
                 <li><b>Speed:</b> It has very high speed of execution.</li>
@@ -218,7 +219,215 @@ const Unit1ContentC6 = {
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid var(--S-border);">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'ML Features & Assembly Language')">Back</button>
                 <span style="font-weight:bold;">Page 3</span>
-                <button class="S-nav-btn" onclick="alert('Congratulations! Unit 1 is completed.')">Finish</button>
+                <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'Fifth Generation Language')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Fifth Generation Language": `
+        <div class="S-book-page">
+            <h3 style="color:#d35400;">Fifth Generation Language (5GL)</h3>
+            <p>A Fifth Generation Language (5GL) is a special type of computer language that is used to make smart programs like robots and talking assistants.</p>
+            
+            <ul style="padding-left: 20px;">
+                <li>In earlier computer languages, we had to give the computer step-by-step instructions to do a task.</li>
+                <li>In a fifth generation language, we just tell the computer what we want, and it figures out how to do it by itself.</li>
+                <li>These languages are used in Artificial Intelligence, where computers try to think and learn like humans.</li>
+                <li>For example, if you tell the computer to find the best way to school, it will think and choose the fastest route without needing step-by-step directions.</li>
+                <li>Fifth generation languages help build smart apps like Siri, Alexa, and other AI tools that can answer questions and solve problems on their own.</li>
+            </ul>
+
+            <div style="background:#fff3e0; padding:15px; border-radius:10px; border-left:5px solid #e67e22; margin:20px 0;">
+                <h4 style="margin:0 0 10px 0; color:#d35400;">Quick knowledge</h4>
+                <p style="margin:0;">A Fifth Generation Language (5GL) is used to create smart programs that can think and solve problems on their own. It is mainly used in Artificial Intelligence, where the computer decides <b>how</b> to do a task by itself</p>
+            </div>
+
+            <h3 style="color:#d35400; margin-top: 25px;">Features of Fifth Generation Language (5GL)</h3>
+            <ul style="padding-left: 20px;">
+                <li><b>Problem-solving based –</b> Focuses on what needs to be solved, not how.</li>
+                <li><b>Used in Artificial Intelligence –</b> Helps computers think and learn.</li>
+                <li><b>Declarative language –</b> You tell what you want, not the steps.</li>
+                <li><b>Supports AI tools like expert systems and robots.</b></li>
+                <li><b>Works with logic and constraints –</b> Uses rules to find answers.</li>
+                <li><b>Less coding needed –</b> Easier for users, as the computer figures out the method.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'HLL, 4GL & Future')">Back</button>
+                <span style="font-weight:bold; color:#888;">Page 4</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Next Chapter</button>
+            </div>
+        </div>
+    `,
+
+    "Introduction & Continuum": `
+        <div class="S-book-page">
+            <div class="S-page-header">
+                <span style="background:#0078d7; color:white; padding:2px 10px; border-radius:5px; font-size:14px;">Unit 2</span>
+                <h1 style="color:#0078d7; font-size:32px; margin-top:10px;">Further On Windows 10</h1>
+            </div>
+
+            <div class="S-learning-box" style="background:#e3f2fd; padding:15px; border-radius:10px; border-left:5px solid #1e88e5; margin:20px 0;">
+                <h4 style="margin:0 0 10px 0; color:#1e88e5;">WHAT WILL YOU LEARN TODAY</h4>
+                <ul style="display:grid; grid-template-columns: 1fr 1fr; font-size:14px; list-style-type: disc; padding-left: 20px;">
+                    <li>Features of Windows 10</li>
+                    <li>Utilities</li>
+                    <li>Creating a New Desktop</li>
+                    <li>The Control Panel</li>
+                </ul>
+            </div>
+
+            <div class="S-content-text">
+                <p>Windows 10 was released on 29th July 2015 by Microsoft Operation system. It is a combination of the best features of its older versions like Windows 7 and Windows 8. It is faster, more secure, and will continue to be supported by Microsoft for several years to come.</p>
+                
+                <div style="background:#fff9e6; padding:15px; border-radius:10px; border:2px dashed #f1c40f; margin:20px 0;">
+                    <strong style="color:#d35400;">Know A Fact</strong><br>
+                    Bill Gates and Paul Allen started Microsoft (originally called Micro-Soft) for microprocessors and software to produce software for the Altair 8800, an early personal computer.
+                </div>
+
+                <h3>FEATURES OF WINDOWS 10</h3>
+                <p>To keep us organised all the time, the operating system platform is offering a host of new and advanced features like Start Menu, Live Tiles, Snap Assist, Task View and Virtual Desktops.</p>
+                <ul>
+                    <li><b>Personalization:</b> We can use Windows 10 as a personal digital assistant. It has the feature which can synchronise our devices and phone for greater gaming experience and other features.</li>
+                    <li><b>Windows 10 Continuum:</b> This is a feature that adjusts graphical user interface of a device to accommodate different form factors.
+                        <ul>
+                            <li>For example, if a user is working with a 2-in-1 device, Windows 10 will default to desktop mode with the keyboard attached and will then switch to tablet mode when you remove the keyboard.</li>
+                            <li>Tablet mode is automatically selected if there is no keyboard. It opens the Start menu in full screen and maximises all the apps.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3 style="color:#0078d7; margin-top:25px;">To use the Tablet Mode:</h3>
+                <ul>
+                    <li>Click on <b>Notification icon</b> present in the <b>Notification area</b> of the <b>Taskbar</b>. This will open the <b>Action Center</b> on the right side of the desktop.</li>
+                    <li>Click on the <b>Tablet Mode</b> placed at the bottom of the <b>Action Center Pane</b>.</li>
+                </ul>
+            </div>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'Fifth Generation Language')">Back</button>
+                <span style="font-weight:bold;">Page 16-17</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Search & Cortana')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Search & Cortana": `
+        <div class="S-book-page">
+            <h3>THE NEW SEARCH BAR</h3>
+            <ul style="padding-left: 20px;">
+                <li>The new Search Bar on the Taskbar allows the user to search the web and the Windows, which makes it very easy for the user to find any file, folder, etc.</li>
+                <li>To access this feature, click on the search bar where <b>"Type here to search"</b> is displayed.</li>
+                <li>Now, enter the name of the application, file, folder, etc. and click on the desired search result.</li>
+            </ul>
+
+            <h3 style="margin-top:25px;">TALK TO CORTANA</h3>
+            <ul style="padding-left: 20px;">
+                <li>Cortana is a Microsoft's voice-controlled digital assistant for your desktop computers.</li>
+                <li>It makes it easier for the user to interact with the device without even lifting a finger.</li>
+                <li>It enables the user to search their hard drive for specific files, pull up photos from specific dates, or launch application just by telling their PC to do so.</li>
+                <li>Cortana can also be used to send an email while the user is working on another application, making multi-tasking much easier.</li>
+            </ul>
+
+            <div style="background:#eef2ff; padding:15px; border-radius:10px; border-left:5px solid #4f46e5; margin:20px 0;">
+                <strong style="color:#3730a3;">Know More:</strong><br>
+                Cortana's heart and soul are visually represented by the circular orb graphic. It spins and rotates and changes shades to let you know if she's working or thinking or speaking.
+            </div>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Back</button>
+                <span style="font-weight:bold;">Page 18</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Task View & Virtual Desktops')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Task View & Virtual Desktops": `
+        <div class="S-book-page">
+            <h3>TASK VIEW</h3>
+            <p>In Windows 10, Task View is a task switcher and virtual desktop system. It allows a user to:</p>
+            <ul style="padding-left: 20px;">
+                <li>Quickly locate an open window.</li>
+                <li>Quickly show the desktop and hide all windows.</li>
+                <li>Manage windows across multiple monitors or virtual desktops.</li>
+                <li>To view all together, click on the <b>Task View</b> button on the Taskbar.</li>
+            </ul>
+
+            <div style="background:#f0fdf4; padding:10px; border-radius:5px; border:1px solid #bbf7d0; margin:15px 0;">
+                <strong>Shortcut key:</strong> You can activate Task View by pressing <b>Win + Tab</b> on your keyboard.
+            </div>
+
+            <h3>VIRTUAL DESKTOPS</h3>
+            <ul style="padding-left: 20px;">
+                <li>When all the desktops are on the Task View, the user can drag and drop an application from one desktop to another for easy management and use.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Search & Cortana')">Back</button>
+                <span style="font-weight:bold;">Page 18-19</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Edge & Windows Hello')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Edge & Windows Hello": `
+        <div class="S-book-page">
+            <h3>MICROSOFT EDGE WEB BROWSER</h3>
+            <p>Microsoft Edge is the default web browser on Windows 10. It replaced Internet Explorer. It was released in 2015.</p>
+            <ul style="padding-left: 20px;">
+                <li>Edge integrates with the <b>Cortana</b> Digital Assistant to provide voice-controlled search and personalize information, to users.</li>
+                <li>We can also use Edge to mark web pages, and these remarks are stored on <b>OneDrive</b> and they can be accessed by other users.</li>
+                <li>The <b>Reading List</b> function of Edge, synchronises the content between devices.</li>
+                <li>The <b>Reading Mode</b>, formats the display to allow the user for easy reading on devices.</li>
+            </ul>
+
+            <div style="background:#eef2ff; padding:10px; border-radius:5px; border-left:5px solid #4f46e5; margin:15px 0;">
+                <strong style="color:#3730a3;">Quick knowledge:</strong><br>
+                Microsoft Edge uses Bing its default search engine.
+            </div>
+
+            <h3>WINDOWS HELLO</h3>
+            <p>Microsoft developed a new built-in biometric security system for Windows 10 known as Windows Hello.</p>
+            <ul style="padding-left: 20px;">
+                <li>Besides using passwords or pin code to login into a computer system, the user can use biometric logins, like face, fingerprint, or iris recognition.</li>
+                <li>To use this feature, it is very important that the computer system is equipped with the appropriate hardware devices.</li>
+                <li>The biometric logins provided by the Hello are very secure and once created the user can login easily.</li>
+                <li>These logins are faster than entering passwords or pin codes and also secure.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Task View & Virtual Desktops')">Back</button>
+                <span style="font-weight:bold;">Page 19-20</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Action Center & Universal Apps')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Action Center & Universal Apps": `
+        <div class="S-book-page">
+            <h3>ACTION CENTER</h3>
+            <p>The new notification center of Windows 10, displays alerts and notifications of the device and of the installed applications (apps) in a slide-out pane, which slides out on the right side of the desktop.</p>
+            <ul style="padding-left: 20px;">
+                <li>In the slide pane, the upper part displays the notifications, security tops, alarms, reminders, app notifications, reminders, etc.</li>
+                <li>The lower part has a set of <b>Quick actions</b> buttons.</li>
+            </ul>
+
+            <div style="background:#fff3e0; padding:15px; border-radius:10px; border-left:5px solid #e67e22; margin:20px 0;">
+                <strong style="color:#d35400;">Quiz Time:</strong><br>
+                Can we use Cortana to find meaning of any word?
+            </div>
+
+            <h3>UNIVERSAL APPS</h3>
+            <p>Microsoft is introducing a new category of software called Universal Apps, which use the same code but adapt their interface to the device in your hand.</p>
+            <ul style="padding-left: 20px;">
+                <li>Microsoft is bundling its own set including Weather, Calendar, Alarms & Clock, Camera, Messaging, Movies & TV, Music, Mail, Maps, Photos, etc.</li>
+                <li>They all function the same way on tablets, phones and PCs.</li>
+                <li>The content is stored and synced via Microsoft's cloud service <b>OneDrive</b> so you can pick up where you left off on another device whenever you want.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Edge & Windows Hello')">Back</button>
+                <span style="font-weight:bold;">Page 20</span>
+                <button class="S-nav-btn" onclick="alert('Congratulations! Chapter 2 is completed.')">Finish</button>
             </div>
         </div>
     `
