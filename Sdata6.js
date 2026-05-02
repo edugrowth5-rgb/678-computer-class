@@ -254,7 +254,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'HLL, 4GL & Future')">Back</button>
-                <span style="font-weight:bold; color:#888;">Computer Se Sikhoo</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Next Chapter</button>
             </div>
         </div>
