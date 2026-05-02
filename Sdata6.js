@@ -8,7 +8,7 @@ const Sdata6Menu = [
   {
     "id": "c6-u2",
     "title": "2. Further on Windows 10",
-    "topics": ["Introduction & Continuum", "Search & Cortana", "Task View & Virtual Desktops", "Edge & Windows Hello", "Action Center & Universal Apps"]
+    "topics": ["Introduction & Continuum", "Search & Cortana", "Task View & Virtual Desktops", "Creating & Managing Desktops", "Utilities & Disk Cleanup", "Character Map & Control Panel", "Fonts & Mouse Settings"]
   }
 ];
 
@@ -73,7 +73,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid var(--S-border);">
                 <button class="S-nav-btn" disabled style="opacity:0.5;">Back</button>
-               <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'ML Features & Assembly Language')">Next</button>
             </div>
         </div>
@@ -141,7 +141,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid var(--S-border);">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'Introduction & Machine Language')">Back</button>
-               <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'HLL, 4GL & Future')">Next</button>
             </div>
         </div>
@@ -254,7 +254,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding:20px 0; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('1. Computer Languages', 'HLL, 4GL & Future')">Back</button>
-                <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <span style="font-weight:bold; color:#888;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Next Chapter</button>
             </div>
         </div>
@@ -335,7 +335,7 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Introduction & Continuum')">Back</button>
-               <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Task View & Virtual Desktops')">Next</button>
             </div>
         </div>
@@ -426,6 +426,165 @@ const Unit1ContentC6 = {
 
             <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
                 <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Edge & Windows Hello')">Back</button>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
+               <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Creating & Managing Desktops')">Next</button>
+            </div>
+        </div>
+    `,
+    "Creating & Managing Desktops": `
+        <div class="S-book-page">
+            <h3 style="color:#0078d7;">CREATING A NEW DESKTOP</h3>
+            <p>Windows 10 allows you to create multiple desktops for organising different set of applications. Follow the steps given below to create a new desktop:</p>
+            <ul>
+                <li>On the <b>Taskbar</b>, click on the <b>Task View</b> button. This will open task view pane, displaying the preview of all the open windows.</li>
+                <li>Click on the <b>New desktop</b> button on the top left corner of the task view pane. <b>Desktop 2</b> thumbnail will appear.</li>
+                <li>Click on the <b>Desktop 2</b> thumbnail and you will notice that it is the exact replica of Desktop 1 but Desktop 2 does not have the same windows opened as in Desktop 1.</li>
+                <li>You can now open new apps to use on <b>Desktop 2</b>.</li>
+                <li>Now, to switch back to <b>Desktop 1</b>, click on the task view button and click on desktop 1 to make a switch.</li>
+            </ul>
+
+            <div style="background:#fff9e6; padding:15px; border-radius:10px; border:1px dashed #f1c40f; margin:15px 0;">
+                <strong style="color:#d35400;">Quick knowledge</strong><br>
+                Create custom additional desktops to group apps for productivity, entertainment, or whatever you choose. This makes multitasking and organizing your opened apps much easier.
+            </div>
+
+            <div style="background:#e8f5e9; padding:10px; border-radius:5px; border-left:5px solid #2e7d32; margin:15px 0;">
+                <strong style="color:#2e7d32;">Shortcut key</strong><br>
+                • You can create a new desktop by using the <b>Windows key + Ctrl + D</b> shortcut.<br>
+                • To delete a desktop you are currently in, press <b>Windows key + Ctrl + F4</b>.
+            </div>
+
+            <h3 style="color:#0078d7; margin-top:25px;">Movement of Apps between Desktops</h3>
+            <p>You can move the apps from one desktop to another. To do so follow the steps given below:</p>
+            <ul>
+                <li>Click on the <b>Task view</b> button on the taskbar.</li>
+                <li>Place the mouse pointer over the desktop thumbnail. This will display all the apps running on it.</li>
+                <li>Move your mouse pointer to the application which you want to move. Right-click and click on <b>Move to</b> option.</li>
+                <li>Further, it will display you the options of desktops that you have created. Click on the desired desktop.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Task View & Virtual Desktops')">Back</button>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Utilities & Disk Cleanup')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Utilities & Disk Cleanup": `
+        <div class="S-book-page">
+            <h3 style="color:#0078d7;">CLOSING A DESKTOP</h3>
+            <p>To close a desktop, follow the steps given below:</p>
+            <ul>
+                <li>Click on <b>Task view</b> button on the taskbar.</li>
+                <li>Place the mouse pointer on the desktop thumbnail you want to close.</li>
+                <li>Click on the <b>Close (X)</b> button on the top-right corner of the desktop thumbnail and desktop will be closed.</li>
+                <li>As soon as you will close the desktop, the applications opened on that desktop will now appear on the current desktop.</li>
+            </ul>
+
+            <h3 style="color:#0078d7; margin-top:25px;">UTILITIES</h3>
+            <p>Windows 10 includes really useful tools and utilities programs that help you control your system for better day-to-day application. Some of the utilities are character map, Disk clean-up, Math input Panel, Notepad, Paint, steps Recorder, windows Media Player, WordPad, etc.</p>
+
+            <h3 style="color:#0078d7; margin-top:25px;">DISK CLEANUP</h3>
+            <p>When the computer is in use, there are some unwanted and useless files, which are collected in the computer and also, occupies space on the hard disk. This makes the computer system work slow. To clean all these files and make the computer work fast, Disk Cleanup feature of Windows 10 is used.</p>
+            
+            <p><b>Steps for Disk Cleanup:</b></p>
+            <ul>
+                <li>Write <b>disk cleanup</b> in the Search bar and click on Disk Cleanup app.</li>
+                <li>Select the drive like <b>(C:)</b> and click OK button.</li>
+                <li>The disk cleanup will calculate and display junk (unwanted, no longer required) files.</li>
+                <li>Check the boxes which are at the beginning of each <b>Files to delete</b>.</li>
+                <li>Once the selection is done, click on <b>OK</b> button. A confirmation dialog box will appear. Click on <b>Delete Files</b> button.</li>
+            </ul>
+
+            <div style="background:#eef2ff; padding:15px; border-radius:10px; border-left:5px solid #4f46e5; margin:15px 0;">
+                <strong style="color:#3730a3;">Know More</strong><br>
+                Disk Clean-up targets the offline web pages cached by Microsoft to provide for quick offline access to the user.
+            </div>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Creating & Managing Desktops')">Back</button>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Character Map & Control Panel')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Character Map & Control Panel": `
+        <div class="S-book-page">
+            <h3 style="color:#0078d7;">WINDOWS MEDIA PLAYER</h3>
+            <p>A Media Player is a computer program used for playing multimedia files such as music, short videos and movies. In Windows 10, Windows Media Player runs and organises digital media files.</p>
+            <ul>
+                <li>It also helps the user to copy multimedia files to a CD/DVD or to other portable devices.</li>
+                <li>To finalise the CD so that data can be exported, click on <b>Finish Burning</b> or select <b>Eject</b>.</li>
+            </ul>
+
+            <h3 style="color:#0078d7; margin-top:25px;">CHARACTER MAP</h3>
+            <p>Character Map utility is used for seeing all available characters and Unicode in each of the fonts installed on the computer. It helps in manual typing of the Unicode number to insert a special character like a trademark (™) or degree (°) symbol.</p>
+            
+            <p><b>First Method to copy characters:</b></p>
+            <ul>
+                <li>Start <b>Character Map</b>.</li>
+                <li>In the <b>Font</b> box, select the font you want to use, like <b>Arial</b>.</li>
+                <li>Click the special character, click <b>Select</b>, and then click <b>Copy</b> button.</li>
+                <li>In your document, position the cursor and click <b>Paste</b>.</li>
+            </ul>
+
+            <p><b>Second Method using Unicode:</b></p>
+            <ul>
+                <li>Press and hold down the <b>Alt</b> key while you type the four number Unicode value for the character.</li>
+                <li>Note that <b>Num Lock</b> must be on, and you have to use the number pad keys.</li>
+            </ul>
+
+            <h3 style="color:#0078d7; margin-top:25px;">THE CONTROL PANEL</h3>
+            <p>Control panel is a component of Windows 10 that provides you the ability to view and change the settings and appearance of the Windows.</p>
+            <ul>
+                <li><b>To open:</b> Click on the Start button > Windows system > Control panel. Or type <b>control panel</b> on the search bar.</li>
+            </ul>
+
+            <div style="background:#fff9e6; padding:15px; border-radius:10px; border:1px dashed #f1c40f; margin:15px 0;">
+                <strong style="color:#d35400;">Know More</strong><br>
+                Control Panel applets display by Category, which groups them together logically, or in the Large icons or Small icons view.
+            </div>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Utilities & Disk Cleanup')">Back</button>
+                <span style="font-weight:bold;">Computer Se Sikhoo</span>
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Fonts & Mouse Settings')">Next</button>
+            </div>
+        </div>
+    `,
+
+    "Fonts & Mouse Settings": `
+        <div class="S-book-page">
+            <h3 style="color:#0078d7;">CHANGING DATE AND TIME</h3>
+            <ul>
+                <li>Click on <b>Clock and Region</b> option from the Control Panel window.</li>
+                <li>Click on the <b>Date and Time</b> option.</li>
+                <li>Click on <b>Change date and time...</b> and select the desired date and change months by press the arrow buttons.</li>
+                <li>Select the hour text to increase or decrease the hour, minutes and seconds.</li>
+            </ul>
+
+            <h3 style="color:#0078d7; margin-top:25px;">FONTS OPTION</h3>
+            <p>Font settings are used to control the display of character or text on the screen as well as on the hardcopy.</p>
+            <ul>
+                <li><b>To view:</b> Open Control Panel > click on <b>View by: list</b> and select. Click on <b>Fonts</b>. Double-click on any font to view the sample text.</li>
+                <li><b>To add:</b> Click and drag the font to the <b>Fonts</b> window, or right-click and <b>copy</b> then <b>paste</b> it to the fonts window.</li>
+                <li><b>To delete:</b> Single-click on the font and click on the <b>delete</b> button above the font thumbnails.</li>
+            </ul>
+
+            <h3 style="color:#0078d7; margin-top:25px;">THE MOUSE SETTINGS</h3>
+            <p>Windows 10 allows us customise our mouse setting like changing mouse pointer appearance, altering scroll speed, or changing functions of buttons.</p>
+            <ul>
+                <li>Click on the <b>Mouse</b> option on the control panel.</li>
+                <li>Select the <b>Pointers</b> tab.</li>
+                <li>Click on <b>Scheme</b> drop-down list to change the pointer image.</li>
+                <li>Choose image from <b>Customize</b> or click <b>Browse</b> to select any file.</li>
+                <li>Click on <b>Apply</b> and then click on <b>OK</b>.</li>
+            </ul>
+
+            <div class="S-page-nav" style="display:flex; justify-content:space-between; margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                <button class="S-nav-btn" onclick="loadS678Content('2. Further on Windows 10', 'Character Map & Control Panel')">Back</button>
                 <span style="font-weight:bold;">Computer Se Sikhoo</span>
                 <button class="S-nav-btn" onclick="alert('Congratulations! Chapter 2 is completed.')">Finish</button>
             </div>
